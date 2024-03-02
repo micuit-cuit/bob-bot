@@ -1,0 +1,4715 @@
+// 20240301221035
+// https://bob-api.run.innovation-laposte.io/_publicApi
+
+{
+  "action": "publicApi",
+  "controller": "server",
+  "error": null,
+  "headers": {
+    
+  },
+  "node": "knode-innate-dali-76175",
+  "requestId": "d12b3052-c52f-4a73-a85d-91f5a7df4ba9",
+  "result": {
+    "auth": {
+      "checkRights": {
+        "action": "checkRights",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_checkRights",
+            "url": "/_checkRights",
+            "verb": "POST"
+          }
+        ]
+      },
+      "checkToken": {
+        "action": "checkToken",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_checkToken",
+            "url": "/_checkToken",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createApiKey": {
+        "action": "createApiKey",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/api-keys/_create",
+            "url": "/api-keys/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createMyCredentials": {
+        "action": "createMyCredentials",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/credentials/:strategy/_create",
+            "url": "/_me/credentials/:strategy/_create",
+            "verb": "POST"
+          },
+          {
+            "path": "/credentials/:strategy/_me/_create",
+            "url": "/credentials/:strategy/_me/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createToken": {
+        "action": "createToken",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_createToken",
+            "url": "/_createToken",
+            "verb": "POST"
+          }
+        ]
+      },
+      "credentialsExist": {
+        "action": "credentialsExist",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/credentials/:strategy/_exists",
+            "url": "/_me/credentials/:strategy/_exists",
+            "verb": "GET"
+          },
+          {
+            "path": "/credentials/:strategy/_me/_exists",
+            "url": "/credentials/:strategy/_me/_exists",
+            "verb": "GET"
+          }
+        ]
+      },
+      "deleteApiKey": {
+        "action": "deleteApiKey",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/api-keys/:_id",
+            "url": "/api-keys/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteMyCredentials": {
+        "action": "deleteMyCredentials",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/credentials/:strategy",
+            "url": "/_me/credentials/:strategy",
+            "verb": "DELETE"
+          },
+          {
+            "path": "/credentials/:strategy/_me",
+            "url": "/credentials/:strategy/_me",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "getCurrentUser": {
+        "action": "getCurrentUser",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me",
+            "url": "/_me",
+            "verb": "GET"
+          },
+          {
+            "path": "/users/_me",
+            "url": "/users/_me",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getMyCredentials": {
+        "action": "getMyCredentials",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/credentials/:strategy",
+            "url": "/_me/credentials/:strategy",
+            "verb": "GET"
+          },
+          {
+            "path": "/credentials/:strategy/_me",
+            "url": "/credentials/:strategy/_me",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getMyRights": {
+        "action": "getMyRights",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/_rights",
+            "url": "/_me/_rights",
+            "verb": "GET"
+          },
+          {
+            "path": "/users/_me/_rights",
+            "url": "/users/_me/_rights",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getStrategies": {
+        "action": "getStrategies",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/strategies",
+            "url": "/strategies",
+            "verb": "GET"
+          }
+        ]
+      },
+      "login": {
+        "action": "login",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_login/:strategy",
+            "url": "/_login/:strategy",
+            "verb": "GET"
+          },
+          {
+            "path": "/_login/:strategy",
+            "url": "/_login/:strategy",
+            "verb": "POST"
+          }
+        ]
+      },
+      "logout": {
+        "action": "logout",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_logout",
+            "url": "/_logout",
+            "verb": "POST"
+          }
+        ]
+      },
+      "refreshToken": {
+        "action": "refreshToken",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_refreshToken",
+            "url": "/_refreshToken",
+            "verb": "POST"
+          }
+        ]
+      },
+      "searchApiKeys": {
+        "action": "searchApiKeys",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/api-keys/_search",
+            "url": "/api-keys/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "updateMyCredentials": {
+        "action": "updateMyCredentials",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/credentials/:strategy/_update",
+            "url": "/_me/credentials/:strategy/_update",
+            "verb": "PUT"
+          },
+          {
+            "path": "/credentials/:strategy/_me/_update",
+            "url": "/credentials/:strategy/_me/_update",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateSelf": {
+        "action": "updateSelf",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me",
+            "url": "/_me",
+            "verb": "PUT"
+          },
+          {
+            "path": "/_updateSelf",
+            "url": "/_updateSelf",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "validateMyCredentials": {
+        "action": "validateMyCredentials",
+        "controller": "auth",
+        "http": [
+          {
+            "path": "/_me/credentials/:strategy/_validate",
+            "url": "/_me/credentials/:strategy/_validate",
+            "verb": "POST"
+          },
+          {
+            "path": "/credentials/:strategy/_me/_validate",
+            "url": "/credentials/:strategy/_me/_validate",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "bulk": {
+      "import": {
+        "action": "import",
+        "controller": "bulk",
+        "http": [
+          {
+            "path": "/:index/:collection/_bulk",
+            "url": "/:index/:collection/_bulk",
+            "verb": "POST"
+          }
+        ]
+      },
+      "write": {
+        "action": "write",
+        "controller": "bulk",
+        "http": [
+          {
+            "path": "/:index/:collection/_write",
+            "url": "/:index/:collection/_write",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mWrite": {
+        "action": "mWrite",
+        "controller": "bulk",
+        "http": [
+          {
+            "path": "/:index/:collection/_mWrite",
+            "url": "/:index/:collection/_mWrite",
+            "verb": "POST"
+          }
+        ]
+      },
+      "deleteByQuery": {
+        "action": "deleteByQuery",
+        "controller": "bulk",
+        "http": [
+          {
+            "path": "/:index/:collection/_bulk/_query",
+            "url": "/:index/:collection/_bulk/_query",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "updateByQuery": {
+        "action": "updateByQuery",
+        "controller": "bulk",
+        "http": [
+          {
+            "path": "/:index/:collection/_bulk/_query",
+            "url": "/:index/:collection/_bulk/_query",
+            "verb": "PATCH"
+          }
+        ]
+      }
+    },
+    "cluster": {
+      "status": {
+        "action": "status",
+        "controller": "cluster",
+        "http": [
+          {
+            "path": "/cluster/_status",
+            "url": "/cluster/_status",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "collection": {
+      "create": {
+        "action": "create",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection",
+            "url": "/:index/:collection",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "delete": {
+        "action": "delete",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection",
+            "url": "/:index/:collection",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteSpecifications": {
+        "action": "deleteSpecifications",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_specifications",
+            "url": "/:index/:collection/_specifications",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "exists": {
+        "action": "exists",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_exists",
+            "url": "/:index/:collection/_exists",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getMapping": {
+        "action": "getMapping",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_mapping",
+            "url": "/:index/:collection/_mapping",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getSpecifications": {
+        "action": "getSpecifications",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_specifications",
+            "url": "/:index/:collection/_specifications",
+            "verb": "GET"
+          }
+        ]
+      },
+      "list": {
+        "action": "list",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/_list",
+            "url": "/:index/_list",
+            "verb": "GET"
+          }
+        ]
+      },
+      "refresh": {
+        "action": "refresh",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_refresh",
+            "url": "/:index/:collection/_refresh",
+            "verb": "POST"
+          }
+        ]
+      },
+      "scrollSpecifications": {
+        "action": "scrollSpecifications",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/validations/_scroll/:scrollId",
+            "url": "/validations/_scroll/:scrollId",
+            "verb": "GET"
+          }
+        ]
+      },
+      "searchSpecifications": {
+        "action": "searchSpecifications",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/validations/_search",
+            "url": "/validations/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "truncate": {
+        "action": "truncate",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_truncate",
+            "url": "/:index/:collection/_truncate",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "update": {
+        "action": "update",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection",
+            "url": "/:index/:collection",
+            "verb": "POST"
+          }
+        ]
+      },
+      "updateMapping": {
+        "action": "updateMapping",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_mapping",
+            "url": "/:index/:collection/_mapping",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateSpecifications": {
+        "action": "updateSpecifications",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_specifications",
+            "url": "/:index/:collection/_specifications",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "validateSpecifications": {
+        "action": "validateSpecifications",
+        "controller": "collection",
+        "http": [
+          {
+            "path": "/:index/:collection/_validateSpecifications",
+            "url": "/:index/:collection/_validateSpecifications",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "debug": {
+      "nodeVersion": {
+        "action": "nodeVersion",
+        "controller": "debug",
+        "http": [
+          {
+            "path": "/debug/_nodeVersion",
+            "url": "/debug/_nodeVersion",
+            "verb": "GET"
+          }
+        ]
+      },
+      "enable": {
+        "action": "enable",
+        "controller": "debug",
+        "http": [
+          {
+            "path": "/debug/_enable",
+            "url": "/debug/_enable",
+            "verb": "POST"
+          }
+        ]
+      },
+      "disable": {
+        "action": "disable",
+        "controller": "debug",
+        "http": [
+          {
+            "path": "/debug/_disable",
+            "url": "/debug/_disable",
+            "verb": "POST"
+          }
+        ]
+      },
+      "post": {
+        "action": "post",
+        "controller": "debug",
+        "http": [
+          {
+            "path": "/debug/_post",
+            "url": "/debug/_post",
+            "verb": "POST"
+          }
+        ]
+      },
+      "addListener": {
+        "action": "addListener",
+        "controller": "debug"
+      },
+      "removeListener": {
+        "action": "removeListener",
+        "controller": "debug"
+      }
+    },
+    "document": {
+      "count": {
+        "action": "count",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_count",
+            "url": "/:index/:collection/_count",
+            "verb": "POST"
+          }
+        ]
+      },
+      "create": {
+        "action": "create",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_create",
+            "url": "/:index/:collection/_create",
+            "verb": "POST"
+          },
+          {
+            "path": "/:index/:collection/:_id/_create",
+            "url": "/:index/:collection/:_id/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createOrReplace": {
+        "action": "createOrReplace",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id",
+            "url": "/:index/:collection/:_id",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "delete": {
+        "action": "delete",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id",
+            "url": "/:index/:collection/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteByQuery": {
+        "action": "deleteByQuery",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_query",
+            "url": "/:index/:collection/_query",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteFields": {
+        "action": "deleteFields",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id/_fields",
+            "url": "/:index/:collection/:_id/_fields",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "exists": {
+        "action": "exists",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id/_exists",
+            "url": "/:index/:collection/:_id/_exists",
+            "verb": "GET"
+          }
+        ]
+      },
+      "export": {
+        "action": "export",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_export",
+            "url": "/:index/:collection/_export",
+            "verb": "GET"
+          },
+          {
+            "path": "/:index/:collection/_export",
+            "url": "/:index/:collection/_export",
+            "verb": "POST"
+          }
+        ]
+      },
+      "get": {
+        "action": "get",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id",
+            "url": "/:index/:collection/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "mCreate": {
+        "action": "mCreate",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mCreate",
+            "url": "/:index/:collection/_mCreate",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mCreateOrReplace": {
+        "action": "mCreateOrReplace",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mCreateOrReplace",
+            "url": "/:index/:collection/_mCreateOrReplace",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "mDelete": {
+        "action": "mDelete",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mDelete",
+            "url": "/:index/:collection/_mDelete",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "mExists": {
+        "action": "mExists",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mExists",
+            "url": "/:index/:collection/_mExists",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mGet": {
+        "action": "mGet",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mGet",
+            "url": "/:index/:collection/_mGet",
+            "verb": "GET"
+          },
+          {
+            "path": "/:index/:collection/_mGet",
+            "url": "/:index/:collection/_mGet",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mReplace": {
+        "action": "mReplace",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mReplace",
+            "url": "/:index/:collection/_mReplace",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "mUpdate": {
+        "action": "mUpdate",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mUpdate",
+            "url": "/:index/:collection/_mUpdate",
+            "verb": "PUT"
+          },
+          {
+            "path": "/:index/:collection/_mUpdate",
+            "url": "/:index/:collection/_mUpdate",
+            "verb": "PATCH"
+          }
+        ]
+      },
+      "mUpsert": {
+        "action": "mUpsert",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_mUpsert",
+            "url": "/:index/:collection/_mUpsert",
+            "verb": "POST"
+          }
+        ]
+      },
+      "replace": {
+        "action": "replace",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id/_replace",
+            "url": "/:index/:collection/:_id/_replace",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "scroll": {
+        "action": "scroll",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/_scroll/:scrollId",
+            "url": "/_scroll/:scrollId",
+            "verb": "GET"
+          }
+        ]
+      },
+      "search": {
+        "action": "search",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_search",
+            "url": "/:index/:collection/_search",
+            "verb": "GET"
+          },
+          {
+            "path": "/:index/:collection/_search",
+            "url": "/:index/:collection/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "update": {
+        "action": "update",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id/_update",
+            "url": "/:index/:collection/:_id/_update",
+            "verb": "PUT"
+          },
+          {
+            "path": "/:index/:collection/:_id/_update",
+            "url": "/:index/:collection/:_id/_update",
+            "verb": "PATCH"
+          }
+        ]
+      },
+      "updateByQuery": {
+        "action": "updateByQuery",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_query",
+            "url": "/:index/:collection/_query",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "upsert": {
+        "action": "upsert",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/:_id/_upsert",
+            "url": "/:index/:collection/:_id/_upsert",
+            "verb": "POST"
+          },
+          {
+            "path": "/:index/:collection/:_id/_upsert",
+            "url": "/:index/:collection/:_id/_upsert",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "validate": {
+        "action": "validate",
+        "controller": "document",
+        "http": [
+          {
+            "path": "/:index/:collection/_validate",
+            "url": "/:index/:collection/_validate",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "index": {
+      "create": {
+        "action": "create",
+        "controller": "index",
+        "http": [
+          {
+            "path": "/:index/_create",
+            "url": "/:index/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "delete": {
+        "action": "delete",
+        "controller": "index",
+        "http": [
+          {
+            "path": "/:index",
+            "url": "/:index",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "exists": {
+        "action": "exists",
+        "controller": "index",
+        "http": [
+          {
+            "path": "/:index/_exists",
+            "url": "/:index/_exists",
+            "verb": "GET"
+          }
+        ]
+      },
+      "list": {
+        "action": "list",
+        "controller": "index",
+        "http": [
+          {
+            "path": "/_list",
+            "url": "/_list",
+            "verb": "GET"
+          }
+        ]
+      },
+      "mDelete": {
+        "action": "mDelete",
+        "controller": "index",
+        "http": [
+          {
+            "path": "/_mDelete",
+            "url": "/_mDelete",
+            "verb": "DELETE"
+          },
+          {
+            "path": "/_mdelete",
+            "url": "/_mdelete",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "stats": {
+        "action": "stats",
+        "controller": "index",
+        "http": [
+          {
+            "path": "/_storageStats",
+            "url": "/_storageStats",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "realtime": {
+      "count": {
+        "action": "count",
+        "controller": "realtime"
+      },
+      "join": {
+        "action": "join",
+        "controller": "realtime"
+      },
+      "list": {
+        "action": "list",
+        "controller": "realtime",
+        "http": [
+          {
+            "path": "/_listSubscriptions",
+            "url": "/_listSubscriptions",
+            "verb": "GET"
+          }
+        ]
+      },
+      "publish": {
+        "action": "publish",
+        "controller": "realtime",
+        "http": [
+          {
+            "path": "/:index/:collection/_publish",
+            "url": "/:index/:collection/_publish",
+            "verb": "POST"
+          }
+        ]
+      },
+      "subscribe": {
+        "action": "subscribe",
+        "controller": "realtime"
+      },
+      "unsubscribe": {
+        "action": "unsubscribe",
+        "controller": "realtime"
+      },
+      "validate": {
+        "action": "validate",
+        "controller": "realtime"
+      }
+    },
+    "security": {
+      "checkRights": {
+        "action": "checkRights",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/_checkRights/:userId",
+            "url": "/_checkRights/:userId",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createApiKey": {
+        "action": "createApiKey",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:userId/api-keys/_create",
+            "url": "/users/:userId/api-keys/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createCredentials": {
+        "action": "createCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id/_create",
+            "url": "/credentials/:strategy/:_id/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createFirstAdmin": {
+        "action": "createFirstAdmin",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/_createFirstAdmin/:_id",
+            "url": "/_createFirstAdmin/:_id",
+            "verb": "POST"
+          },
+          {
+            "path": "/_createFirstAdmin",
+            "url": "/_createFirstAdmin",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createOrReplaceProfile": {
+        "action": "createOrReplaceProfile",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/:_id",
+            "url": "/profiles/:_id",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "createOrReplaceRole": {
+        "action": "createOrReplaceRole",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/:_id",
+            "url": "/roles/:_id",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "createProfile": {
+        "action": "createProfile",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/:_id/_create",
+            "url": "/profiles/:_id/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createRestrictedUser": {
+        "action": "createRestrictedUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_createRestricted",
+            "url": "/users/_createRestricted",
+            "verb": "POST"
+          },
+          {
+            "path": "/users/:_id/_createRestricted",
+            "url": "/users/:_id/_createRestricted",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createRole": {
+        "action": "createRole",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/:_id/_create",
+            "url": "/roles/:_id/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "createUser": {
+        "action": "createUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_create",
+            "url": "/users/_create",
+            "verb": "POST"
+          },
+          {
+            "path": "/users/:_id/_create",
+            "url": "/users/:_id/_create",
+            "verb": "POST"
+          }
+        ]
+      },
+      "deleteApiKey": {
+        "action": "deleteApiKey",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:userId/api-keys/:_id",
+            "url": "/users/:userId/api-keys/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteCredentials": {
+        "action": "deleteCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id",
+            "url": "/credentials/:strategy/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteProfile": {
+        "action": "deleteProfile",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/:_id",
+            "url": "/profiles/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteRole": {
+        "action": "deleteRole",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/:_id",
+            "url": "/roles/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "deleteUser": {
+        "action": "deleteUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id",
+            "url": "/users/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "getAllCredentialFields": {
+        "action": "getAllCredentialFields",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/_fields",
+            "url": "/credentials/_fields",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getCredentialFields": {
+        "action": "getCredentialFields",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/_fields",
+            "url": "/credentials/:strategy/_fields",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getCredentials": {
+        "action": "getCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id",
+            "url": "/credentials/:strategy/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getCredentialsById": {
+        "action": "getCredentialsById",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id/_byId",
+            "url": "/credentials/:strategy/:_id/_byId",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getProfile": {
+        "action": "getProfile",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/:_id",
+            "url": "/profiles/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getProfileMapping": {
+        "action": "getProfileMapping",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/_mapping",
+            "url": "/profiles/_mapping",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getProfileRights": {
+        "action": "getProfileRights",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/:_id/_rights",
+            "url": "/profiles/:_id/_rights",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getRole": {
+        "action": "getRole",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/:_id",
+            "url": "/roles/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getRoleMapping": {
+        "action": "getRoleMapping",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/_mapping",
+            "url": "/roles/_mapping",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getUser": {
+        "action": "getUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id",
+            "url": "/users/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getUserMapping": {
+        "action": "getUserMapping",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_mapping",
+            "url": "/users/_mapping",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getUserRights": {
+        "action": "getUserRights",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id/_rights",
+            "url": "/users/:_id/_rights",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getUserStrategies": {
+        "action": "getUserStrategies",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id/_strategies",
+            "url": "/users/:_id/_strategies",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hasCredentials": {
+        "action": "hasCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id/_exists",
+            "url": "/credentials/:strategy/:_id/_exists",
+            "verb": "GET"
+          }
+        ]
+      },
+      "mDeleteProfiles": {
+        "action": "mDeleteProfiles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/_mDelete",
+            "url": "/profiles/_mDelete",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mDeleteRoles": {
+        "action": "mDeleteRoles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/_mDelete",
+            "url": "/roles/_mDelete",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mDeleteUsers": {
+        "action": "mDeleteUsers",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_mDelete",
+            "url": "/users/_mDelete",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mGetProfiles": {
+        "action": "mGetProfiles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/_mGet",
+            "url": "/profiles/_mGet",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mGetRoles": {
+        "action": "mGetRoles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/_mGet",
+            "url": "/roles/_mGet",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mGetUsers": {
+        "action": "mGetUsers",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_mGet",
+            "url": "/users/_mGet",
+            "verb": "GET"
+          },
+          {
+            "path": "/users/_mGet",
+            "url": "/users/_mGet",
+            "verb": "POST"
+          }
+        ]
+      },
+      "refresh": {
+        "action": "refresh",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/_security/:collection/_refresh",
+            "url": "/_security/:collection/_refresh",
+            "verb": "POST"
+          }
+        ]
+      },
+      "replaceUser": {
+        "action": "replaceUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id/_replace",
+            "url": "/users/:_id/_replace",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "revokeTokens": {
+        "action": "revokeTokens",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id/tokens",
+            "url": "/users/:_id/tokens",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "scrollProfiles": {
+        "action": "scrollProfiles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/_scroll/:scrollId",
+            "url": "/profiles/_scroll/:scrollId",
+            "verb": "GET"
+          }
+        ]
+      },
+      "scrollUsers": {
+        "action": "scrollUsers",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_scroll/:scrollId",
+            "url": "/users/_scroll/:scrollId",
+            "verb": "GET"
+          }
+        ]
+      },
+      "searchApiKeys": {
+        "action": "searchApiKeys",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:userId/api-keys/_search",
+            "url": "/users/:userId/api-keys/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "searchProfiles": {
+        "action": "searchProfiles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/_search",
+            "url": "/profiles/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "searchRoles": {
+        "action": "searchRoles",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/_search",
+            "url": "/roles/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "searchUsers": {
+        "action": "searchUsers",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_search",
+            "url": "/users/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "searchUsersByCredentials": {
+        "action": "searchUsersByCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/users/_search",
+            "url": "/credentials/:strategy/users/_search",
+            "verb": "POST"
+          }
+        ]
+      },
+      "updateCredentials": {
+        "action": "updateCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id/_update",
+            "url": "/credentials/:strategy/:_id/_update",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateProfile": {
+        "action": "updateProfile",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/:_id/_update",
+            "url": "/profiles/:_id/_update",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateProfileMapping": {
+        "action": "updateProfileMapping",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/profiles/_mapping",
+            "url": "/profiles/_mapping",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateRole": {
+        "action": "updateRole",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/:_id/_update",
+            "url": "/roles/:_id/_update",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateRoleMapping": {
+        "action": "updateRoleMapping",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/roles/_mapping",
+            "url": "/roles/_mapping",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateUser": {
+        "action": "updateUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id/_update",
+            "url": "/users/:_id/_update",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "updateUserMapping": {
+        "action": "updateUserMapping",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/_mapping",
+            "url": "/users/_mapping",
+            "verb": "PUT"
+          }
+        ]
+      },
+      "upsertUser": {
+        "action": "upsertUser",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/users/:_id/_upsert",
+            "url": "/users/:_id/_upsert",
+            "verb": "POST"
+          }
+        ]
+      },
+      "validateCredentials": {
+        "action": "validateCredentials",
+        "controller": "security",
+        "http": [
+          {
+            "path": "/credentials/:strategy/:_id/_validate",
+            "url": "/credentials/:strategy/:_id/_validate",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "server": {
+      "adminExists": {
+        "action": "adminExists",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_adminExists",
+            "url": "/_adminExists",
+            "verb": "GET"
+          }
+        ]
+      },
+      "capabilities": {
+        "action": "capabilities",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_capabilities",
+            "url": "/_capabilities",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getAllStats": {
+        "action": "getAllStats",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_getAllStats",
+            "url": "/_getAllStats",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getConfig": {
+        "action": "getConfig",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_getConfig",
+            "url": "/_getConfig",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getLastStats": {
+        "action": "getLastStats",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_getLastStats",
+            "url": "/_getLastStats",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getStats": {
+        "action": "getStats",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_getStats",
+            "url": "/_getStats",
+            "verb": "GET"
+          }
+        ]
+      },
+      "healthCheck": {
+        "action": "healthCheck",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_healthCheck",
+            "url": "/_healthCheck",
+            "verb": "GET"
+          }
+        ]
+      },
+      "info": {
+        "action": "info",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/",
+            "url": "/",
+            "verb": "GET"
+          },
+          {
+            "path": "/_serverInfo",
+            "url": "/_serverInfo",
+            "verb": "GET"
+          }
+        ]
+      },
+      "metrics": {
+        "action": "metrics",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_metrics",
+            "url": "/_metrics",
+            "verb": "GET"
+          }
+        ]
+      },
+      "now": {
+        "action": "now",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_now",
+            "url": "/_now",
+            "verb": "GET"
+          }
+        ]
+      },
+      "publicApi": {
+        "action": "publicApi",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_publicApi",
+            "url": "/_publicApi",
+            "verb": "GET"
+          }
+        ]
+      },
+      "openapi": {
+        "action": "openapi",
+        "controller": "server",
+        "http": [
+          {
+            "path": "/_openapi",
+            "url": "/_openapi",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "admin": {
+      "dump": {
+        "action": "dump",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_dump",
+            "url": "/admin/_dump",
+            "verb": "POST"
+          }
+        ]
+      },
+      "loadFixtures": {
+        "action": "loadFixtures",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_loadFixtures",
+            "url": "/admin/_loadFixtures",
+            "verb": "POST"
+          }
+        ]
+      },
+      "loadMappings": {
+        "action": "loadMappings",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_loadMappings",
+            "url": "/admin/_loadMappings",
+            "verb": "POST"
+          }
+        ]
+      },
+      "loadSecurities": {
+        "action": "loadSecurities",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_loadSecurities",
+            "url": "/admin/_loadSecurities",
+            "verb": "POST"
+          }
+        ]
+      },
+      "refreshIndexCache": {
+        "action": "refreshIndexCache",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_refreshIndexCache",
+            "url": "/admin/_refreshIndexCache",
+            "verb": "POST"
+          }
+        ]
+      },
+      "resetCache": {
+        "action": "resetCache",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_resetCache",
+            "url": "/admin/_resetCache",
+            "verb": "POST"
+          }
+        ]
+      },
+      "resetDatabase": {
+        "action": "resetDatabase",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_resetDatabase",
+            "url": "/admin/_resetDatabase",
+            "verb": "POST"
+          }
+        ]
+      },
+      "resetSecurity": {
+        "action": "resetSecurity",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_resetSecurity",
+            "url": "/admin/_resetSecurity",
+            "verb": "POST"
+          }
+        ]
+      },
+      "shutdown": {
+        "action": "shutdown",
+        "controller": "admin",
+        "http": [
+          {
+            "path": "/admin/_shutdown/",
+            "url": "/admin/_shutdown/",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "memoryStorage": {
+      "append": {
+        "action": "append",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_append/:_id",
+            "url": "/ms/_append/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "bitcount": {
+        "action": "bitcount",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_bitcount/:_id",
+            "url": "/ms/_bitcount/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "bitop": {
+        "action": "bitop",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_bitop/:_id",
+            "url": "/ms/_bitop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "bitpos": {
+        "action": "bitpos",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_bitpos/:_id",
+            "url": "/ms/_bitpos/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "dbsize": {
+        "action": "dbsize",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_dbsize",
+            "url": "/ms/_dbsize",
+            "verb": "GET"
+          }
+        ]
+      },
+      "decrby": {
+        "action": "decrby",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_decrby/:_id",
+            "url": "/ms/_decrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "del": {
+        "action": "del",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms",
+            "url": "/ms",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "expire": {
+        "action": "expire",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_expire/:_id",
+            "url": "/ms/_expire/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "expireat": {
+        "action": "expireat",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_expireat/:_id",
+            "url": "/ms/_expireat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "flushdb": {
+        "action": "flushdb",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_flushdb",
+            "url": "/ms/_flushdb",
+            "verb": "POST"
+          }
+        ]
+      },
+      "geoadd": {
+        "action": "geoadd",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_geoadd/:_id",
+            "url": "/ms/_geoadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "geodist": {
+        "action": "geodist",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_geodist/:_id/:member1/:member2",
+            "url": "/ms/_geodist/:_id/:member1/:member2",
+            "verb": "GET"
+          }
+        ]
+      },
+      "geohash": {
+        "action": "geohash",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_geohash/:_id",
+            "url": "/ms/_geohash/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "georadius": {
+        "action": "georadius",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_georadius/:_id",
+            "url": "/ms/_georadius/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "georadiusbymember": {
+        "action": "georadiusbymember",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_georadiusbymember/:_id",
+            "url": "/ms/_georadiusbymember/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getbit": {
+        "action": "getbit",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_getbit/:_id",
+            "url": "/ms/_getbit/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getrange": {
+        "action": "getrange",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_getrange/:_id",
+            "url": "/ms/_getrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hdel": {
+        "action": "hdel",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hdel/:_id",
+            "url": "/ms/_hdel/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "hmget": {
+        "action": "hmget",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hmget/:_id",
+            "url": "/ms/_hmget/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hexists": {
+        "action": "hexists",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hexists/:_id/:field",
+            "url": "/ms/_hexists/:_id/:field",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hincrby": {
+        "action": "hincrby",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hincrby/:_id",
+            "url": "/ms/_hincrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hmset": {
+        "action": "hmset",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hmset/:_id",
+            "url": "/ms/_hmset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hset": {
+        "action": "hset",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hset/:_id",
+            "url": "/ms/_hset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hstrlen": {
+        "action": "hstrlen",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hstrlen/:_id/:field",
+            "url": "/ms/_hstrlen/:_id/:field",
+            "verb": "GET"
+          }
+        ]
+      },
+      "keys": {
+        "action": "keys",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_keys/:pattern",
+            "url": "/ms/_keys/:pattern",
+            "verb": "GET"
+          }
+        ]
+      },
+      "lindex": {
+        "action": "lindex",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lindex/:_id/:idx",
+            "url": "/ms/_lindex/:_id/:idx",
+            "verb": "GET"
+          }
+        ]
+      },
+      "linsert": {
+        "action": "linsert",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_linsert/:_id",
+            "url": "/ms/_linsert/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lpush": {
+        "action": "lpush",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lpush/:_id",
+            "url": "/ms/_lpush/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lrange": {
+        "action": "lrange",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lrange/:_id",
+            "url": "/ms/_lrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "lrem": {
+        "action": "lrem",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lrem/:_id",
+            "url": "/ms/_lrem/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "lset": {
+        "action": "lset",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lset/:_id",
+            "url": "/ms/_lset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "ltrim": {
+        "action": "ltrim",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_ltrim/:_id",
+            "url": "/ms/_ltrim/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mget": {
+        "action": "mget",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_mget",
+            "url": "/ms/_mget",
+            "verb": "GET"
+          }
+        ]
+      },
+      "mexecute": {
+        "action": "mexecute",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_mexecute",
+            "url": "/ms/_mexecute",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mset": {
+        "action": "mset",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_mset",
+            "url": "/ms/_mset",
+            "verb": "POST"
+          }
+        ]
+      },
+      "object": {
+        "action": "object",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_object/:_id",
+            "url": "/ms/_object/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "pexpire": {
+        "action": "pexpire",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_pexpire/:_id",
+            "url": "/ms/_pexpire/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pexpireat": {
+        "action": "pexpireat",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_pexpireat/:_id",
+            "url": "/ms/_pexpireat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pfadd": {
+        "action": "pfadd",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_pfadd/:_id",
+            "url": "/ms/_pfadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pfmerge": {
+        "action": "pfmerge",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_pfmerge/:_id",
+            "url": "/ms/_pfmerge/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "ping": {
+        "action": "ping",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_ping",
+            "url": "/ms/_ping",
+            "verb": "GET"
+          }
+        ]
+      },
+      "psetex": {
+        "action": "psetex",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_psetex/:_id",
+            "url": "/ms/_psetex/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "randomkey": {
+        "action": "randomkey",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_randomkey",
+            "url": "/ms/_randomkey",
+            "verb": "GET"
+          }
+        ]
+      },
+      "rename": {
+        "action": "rename",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_rename/:_id",
+            "url": "/ms/_rename/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "renamenx": {
+        "action": "renamenx",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_renamenx/:_id",
+            "url": "/ms/_renamenx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "rpoplpush": {
+        "action": "rpoplpush",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_rpoplpush",
+            "url": "/ms/_rpoplpush",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sadd": {
+        "action": "sadd",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sadd/:_id",
+            "url": "/ms/_sadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "scan": {
+        "action": "scan",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_scan",
+            "url": "/ms/_scan",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sdiff": {
+        "action": "sdiff",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sdiff/:_id",
+            "url": "/ms/_sdiff/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sdiffstore": {
+        "action": "sdiffstore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sdiffstore/:_id",
+            "url": "/ms/_sdiffstore/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "set": {
+        "action": "set",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_set/:_id",
+            "url": "/ms/_set/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "setex": {
+        "action": "setex",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_setex/:_id",
+            "url": "/ms/_setex/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "setnx": {
+        "action": "setnx",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_setnx/:_id",
+            "url": "/ms/_setnx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sinterstore": {
+        "action": "sinterstore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sinterstore",
+            "url": "/ms/_sinterstore",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sismember": {
+        "action": "sismember",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sismember/:_id/:member",
+            "url": "/ms/_sismember/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "smove": {
+        "action": "smove",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_smove/:_id",
+            "url": "/ms/_smove/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sort": {
+        "action": "sort",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sort/:_id",
+            "url": "/ms/_sort/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "spop": {
+        "action": "spop",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_spop/:_id",
+            "url": "/ms/_spop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "srandmember": {
+        "action": "srandmember",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_srandmember/:_id",
+            "url": "/ms/_srandmember/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "srem": {
+        "action": "srem",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_srem/:_id",
+            "url": "/ms/_srem/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "sscan": {
+        "action": "sscan",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sscan/:_id",
+            "url": "/ms/_sscan/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sunion": {
+        "action": "sunion",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sunion",
+            "url": "/ms/_sunion",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sunionstore": {
+        "action": "sunionstore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sunionstore",
+            "url": "/ms/_sunionstore",
+            "verb": "POST"
+          }
+        ]
+      },
+      "time": {
+        "action": "time",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_time",
+            "url": "/ms/_time",
+            "verb": "GET"
+          }
+        ]
+      },
+      "touch": {
+        "action": "touch",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_touch",
+            "url": "/ms/_touch",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zadd": {
+        "action": "zadd",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zadd/:_id",
+            "url": "/ms/_zadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zcount": {
+        "action": "zcount",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zcount/:_id",
+            "url": "/ms/_zcount/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zincrby": {
+        "action": "zincrby",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zincrby/:_id",
+            "url": "/ms/_zincrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zinterstore": {
+        "action": "zinterstore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zinterstore/:_id",
+            "url": "/ms/_zinterstore/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zlexcount": {
+        "action": "zlexcount",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zlexcount/:_id",
+            "url": "/ms/_zlexcount/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrange": {
+        "action": "zrange",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrange/:_id",
+            "url": "/ms/_zrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrangebylex": {
+        "action": "zrangebylex",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrangebylex/:_id",
+            "url": "/ms/_zrangebylex/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrangebyscore": {
+        "action": "zrangebyscore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrangebyscore/:_id",
+            "url": "/ms/_zrangebyscore/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrem": {
+        "action": "zrem",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrem/:_id",
+            "url": "/ms/_zrem/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zremrangebylex": {
+        "action": "zremrangebylex",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zremrangebylex/:_id",
+            "url": "/ms/_zremrangebylex/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zremrangebyrank": {
+        "action": "zremrangebyrank",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zremrangebyrank/:_id",
+            "url": "/ms/_zremrangebyrank/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zremrangebyscore": {
+        "action": "zremrangebyscore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zremrangebyscore/:_id",
+            "url": "/ms/_zremrangebyscore/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zrevrangebylex": {
+        "action": "zrevrangebylex",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrevrangebylex/:_id",
+            "url": "/ms/_zrevrangebylex/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrevrangebyscore": {
+        "action": "zrevrangebyscore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrevrangebyscore/:_id",
+            "url": "/ms/_zrevrangebyscore/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrevrank": {
+        "action": "zrevrank",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrevrank/:_id/:member",
+            "url": "/ms/_zrevrank/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zunionstore": {
+        "action": "zunionstore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zunionstore/:_id",
+            "url": "/ms/_zunionstore/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zcard": {
+        "action": "zcard",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zcard/:_id",
+            "url": "/ms/_zcard/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "type": {
+        "action": "type",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_type/:_id",
+            "url": "/ms/_type/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "ttl": {
+        "action": "ttl",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_ttl/:_id",
+            "url": "/ms/_ttl/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "strlen": {
+        "action": "strlen",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_strlen/:_id",
+            "url": "/ms/_strlen/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "smembers": {
+        "action": "smembers",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_smembers/:_id",
+            "url": "/ms/_smembers/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "scard": {
+        "action": "scard",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_scard/:_id",
+            "url": "/ms/_scard/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "rpop": {
+        "action": "rpop",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_rpop/:_id",
+            "url": "/ms/_rpop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pttl": {
+        "action": "pttl",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_pttl/:_id",
+            "url": "/ms/_pttl/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "persist": {
+        "action": "persist",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_persist/:_id",
+            "url": "/ms/_persist/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lpop": {
+        "action": "lpop",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lpop/:_id",
+            "url": "/ms/_lpop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "llen": {
+        "action": "llen",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_llen/:_id",
+            "url": "/ms/_llen/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "incr": {
+        "action": "incr",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_incr/:_id",
+            "url": "/ms/_incr/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hvals": {
+        "action": "hvals",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hvals/:_id",
+            "url": "/ms/_hvals/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hlen": {
+        "action": "hlen",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hlen/:_id",
+            "url": "/ms/_hlen/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hkeys": {
+        "action": "hkeys",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hkeys/:_id",
+            "url": "/ms/_hkeys/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hgetall": {
+        "action": "hgetall",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hgetall/:_id",
+            "url": "/ms/_hgetall/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "get": {
+        "action": "get",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/:_id",
+            "url": "/ms/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "decr": {
+        "action": "decr",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_decr/:_id",
+            "url": "/ms/_decr/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "rpushx": {
+        "action": "rpushx",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_rpushx/:_id",
+            "url": "/ms/_rpushx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lpushx": {
+        "action": "lpushx",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_lpushx/:_id",
+            "url": "/ms/_lpushx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "getset": {
+        "action": "getset",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_getset/:_id",
+            "url": "/ms/_getset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sinter": {
+        "action": "sinter",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_sinter",
+            "url": "/ms/_sinter",
+            "verb": "GET"
+          }
+        ]
+      },
+      "pfcount": {
+        "action": "pfcount",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_pfcount",
+            "url": "/ms/_pfcount",
+            "verb": "GET"
+          }
+        ]
+      },
+      "incrbyfloat": {
+        "action": "incrbyfloat",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_incrbyfloat/:_id",
+            "url": "/ms/_incrbyfloat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "incrby": {
+        "action": "incrby",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_incrby/:_id",
+            "url": "/ms/_incrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "geopos": {
+        "action": "geopos",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_geopos/:_id",
+            "url": "/ms/_geopos/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hget": {
+        "action": "hget",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hget/:_id/:field",
+            "url": "/ms/_hget/:_id/:field",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hsetnx": {
+        "action": "hsetnx",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hsetnx/:_id",
+            "url": "/ms/_hsetnx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "msetnx": {
+        "action": "msetnx",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_msetnx",
+            "url": "/ms/_msetnx",
+            "verb": "POST"
+          }
+        ]
+      },
+      "rpush": {
+        "action": "rpush",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_rpush/:_id",
+            "url": "/ms/_rpush/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hincrbyfloat": {
+        "action": "hincrbyfloat",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hincrbyfloat/:_id",
+            "url": "/ms/_hincrbyfloat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zrevrange": {
+        "action": "zrevrange",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrevrange/:_id",
+            "url": "/ms/_zrevrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrank": {
+        "action": "zrank",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zrank/:_id/:member",
+            "url": "/ms/_zrank/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zscore": {
+        "action": "zscore",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zscore/:_id/:member",
+            "url": "/ms/_zscore/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zscan": {
+        "action": "zscan",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_zscan/:_id",
+            "url": "/ms/_zscan/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hscan": {
+        "action": "hscan",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_hscan/:_id",
+            "url": "/ms/_hscan/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "exists": {
+        "action": "exists",
+        "controller": "memoryStorage",
+        "http": [
+          {
+            "path": "/ms/_exists",
+            "url": "/ms/_exists",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "ms": {
+      "append": {
+        "action": "append",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_append/:_id",
+            "url": "/ms/_append/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "bitcount": {
+        "action": "bitcount",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_bitcount/:_id",
+            "url": "/ms/_bitcount/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "bitop": {
+        "action": "bitop",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_bitop/:_id",
+            "url": "/ms/_bitop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "bitpos": {
+        "action": "bitpos",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_bitpos/:_id",
+            "url": "/ms/_bitpos/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "dbsize": {
+        "action": "dbsize",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_dbsize",
+            "url": "/ms/_dbsize",
+            "verb": "GET"
+          }
+        ]
+      },
+      "decrby": {
+        "action": "decrby",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_decrby/:_id",
+            "url": "/ms/_decrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "del": {
+        "action": "del",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms",
+            "url": "/ms",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "expire": {
+        "action": "expire",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_expire/:_id",
+            "url": "/ms/_expire/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "expireat": {
+        "action": "expireat",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_expireat/:_id",
+            "url": "/ms/_expireat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "flushdb": {
+        "action": "flushdb",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_flushdb",
+            "url": "/ms/_flushdb",
+            "verb": "POST"
+          }
+        ]
+      },
+      "geoadd": {
+        "action": "geoadd",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_geoadd/:_id",
+            "url": "/ms/_geoadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "geodist": {
+        "action": "geodist",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_geodist/:_id/:member1/:member2",
+            "url": "/ms/_geodist/:_id/:member1/:member2",
+            "verb": "GET"
+          }
+        ]
+      },
+      "geohash": {
+        "action": "geohash",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_geohash/:_id",
+            "url": "/ms/_geohash/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "georadius": {
+        "action": "georadius",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_georadius/:_id",
+            "url": "/ms/_georadius/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "georadiusbymember": {
+        "action": "georadiusbymember",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_georadiusbymember/:_id",
+            "url": "/ms/_georadiusbymember/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getbit": {
+        "action": "getbit",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_getbit/:_id",
+            "url": "/ms/_getbit/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "getrange": {
+        "action": "getrange",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_getrange/:_id",
+            "url": "/ms/_getrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hdel": {
+        "action": "hdel",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hdel/:_id",
+            "url": "/ms/_hdel/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "hmget": {
+        "action": "hmget",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hmget/:_id",
+            "url": "/ms/_hmget/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hexists": {
+        "action": "hexists",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hexists/:_id/:field",
+            "url": "/ms/_hexists/:_id/:field",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hincrby": {
+        "action": "hincrby",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hincrby/:_id",
+            "url": "/ms/_hincrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hmset": {
+        "action": "hmset",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hmset/:_id",
+            "url": "/ms/_hmset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hset": {
+        "action": "hset",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hset/:_id",
+            "url": "/ms/_hset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hstrlen": {
+        "action": "hstrlen",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hstrlen/:_id/:field",
+            "url": "/ms/_hstrlen/:_id/:field",
+            "verb": "GET"
+          }
+        ]
+      },
+      "keys": {
+        "action": "keys",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_keys/:pattern",
+            "url": "/ms/_keys/:pattern",
+            "verb": "GET"
+          }
+        ]
+      },
+      "lindex": {
+        "action": "lindex",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lindex/:_id/:idx",
+            "url": "/ms/_lindex/:_id/:idx",
+            "verb": "GET"
+          }
+        ]
+      },
+      "linsert": {
+        "action": "linsert",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_linsert/:_id",
+            "url": "/ms/_linsert/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lpush": {
+        "action": "lpush",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lpush/:_id",
+            "url": "/ms/_lpush/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lrange": {
+        "action": "lrange",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lrange/:_id",
+            "url": "/ms/_lrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "lrem": {
+        "action": "lrem",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lrem/:_id",
+            "url": "/ms/_lrem/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "lset": {
+        "action": "lset",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lset/:_id",
+            "url": "/ms/_lset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "ltrim": {
+        "action": "ltrim",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_ltrim/:_id",
+            "url": "/ms/_ltrim/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mget": {
+        "action": "mget",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_mget",
+            "url": "/ms/_mget",
+            "verb": "GET"
+          }
+        ]
+      },
+      "mexecute": {
+        "action": "mexecute",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_mexecute",
+            "url": "/ms/_mexecute",
+            "verb": "POST"
+          }
+        ]
+      },
+      "mset": {
+        "action": "mset",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_mset",
+            "url": "/ms/_mset",
+            "verb": "POST"
+          }
+        ]
+      },
+      "object": {
+        "action": "object",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_object/:_id",
+            "url": "/ms/_object/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "pexpire": {
+        "action": "pexpire",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_pexpire/:_id",
+            "url": "/ms/_pexpire/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pexpireat": {
+        "action": "pexpireat",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_pexpireat/:_id",
+            "url": "/ms/_pexpireat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pfadd": {
+        "action": "pfadd",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_pfadd/:_id",
+            "url": "/ms/_pfadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pfmerge": {
+        "action": "pfmerge",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_pfmerge/:_id",
+            "url": "/ms/_pfmerge/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "ping": {
+        "action": "ping",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_ping",
+            "url": "/ms/_ping",
+            "verb": "GET"
+          }
+        ]
+      },
+      "psetex": {
+        "action": "psetex",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_psetex/:_id",
+            "url": "/ms/_psetex/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "randomkey": {
+        "action": "randomkey",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_randomkey",
+            "url": "/ms/_randomkey",
+            "verb": "GET"
+          }
+        ]
+      },
+      "rename": {
+        "action": "rename",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_rename/:_id",
+            "url": "/ms/_rename/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "renamenx": {
+        "action": "renamenx",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_renamenx/:_id",
+            "url": "/ms/_renamenx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "rpoplpush": {
+        "action": "rpoplpush",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_rpoplpush",
+            "url": "/ms/_rpoplpush",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sadd": {
+        "action": "sadd",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sadd/:_id",
+            "url": "/ms/_sadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "scan": {
+        "action": "scan",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_scan",
+            "url": "/ms/_scan",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sdiff": {
+        "action": "sdiff",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sdiff/:_id",
+            "url": "/ms/_sdiff/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sdiffstore": {
+        "action": "sdiffstore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sdiffstore/:_id",
+            "url": "/ms/_sdiffstore/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "set": {
+        "action": "set",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_set/:_id",
+            "url": "/ms/_set/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "setex": {
+        "action": "setex",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_setex/:_id",
+            "url": "/ms/_setex/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "setnx": {
+        "action": "setnx",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_setnx/:_id",
+            "url": "/ms/_setnx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sinterstore": {
+        "action": "sinterstore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sinterstore",
+            "url": "/ms/_sinterstore",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sismember": {
+        "action": "sismember",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sismember/:_id/:member",
+            "url": "/ms/_sismember/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "smove": {
+        "action": "smove",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_smove/:_id",
+            "url": "/ms/_smove/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sort": {
+        "action": "sort",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sort/:_id",
+            "url": "/ms/_sort/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "spop": {
+        "action": "spop",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_spop/:_id",
+            "url": "/ms/_spop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "srandmember": {
+        "action": "srandmember",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_srandmember/:_id",
+            "url": "/ms/_srandmember/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "srem": {
+        "action": "srem",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_srem/:_id",
+            "url": "/ms/_srem/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "sscan": {
+        "action": "sscan",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sscan/:_id",
+            "url": "/ms/_sscan/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sunion": {
+        "action": "sunion",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sunion",
+            "url": "/ms/_sunion",
+            "verb": "GET"
+          }
+        ]
+      },
+      "sunionstore": {
+        "action": "sunionstore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sunionstore",
+            "url": "/ms/_sunionstore",
+            "verb": "POST"
+          }
+        ]
+      },
+      "time": {
+        "action": "time",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_time",
+            "url": "/ms/_time",
+            "verb": "GET"
+          }
+        ]
+      },
+      "touch": {
+        "action": "touch",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_touch",
+            "url": "/ms/_touch",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zadd": {
+        "action": "zadd",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zadd/:_id",
+            "url": "/ms/_zadd/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zcount": {
+        "action": "zcount",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zcount/:_id",
+            "url": "/ms/_zcount/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zincrby": {
+        "action": "zincrby",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zincrby/:_id",
+            "url": "/ms/_zincrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zinterstore": {
+        "action": "zinterstore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zinterstore/:_id",
+            "url": "/ms/_zinterstore/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zlexcount": {
+        "action": "zlexcount",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zlexcount/:_id",
+            "url": "/ms/_zlexcount/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrange": {
+        "action": "zrange",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrange/:_id",
+            "url": "/ms/_zrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrangebylex": {
+        "action": "zrangebylex",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrangebylex/:_id",
+            "url": "/ms/_zrangebylex/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrangebyscore": {
+        "action": "zrangebyscore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrangebyscore/:_id",
+            "url": "/ms/_zrangebyscore/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrem": {
+        "action": "zrem",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrem/:_id",
+            "url": "/ms/_zrem/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zremrangebylex": {
+        "action": "zremrangebylex",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zremrangebylex/:_id",
+            "url": "/ms/_zremrangebylex/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zremrangebyrank": {
+        "action": "zremrangebyrank",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zremrangebyrank/:_id",
+            "url": "/ms/_zremrangebyrank/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zremrangebyscore": {
+        "action": "zremrangebyscore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zremrangebyscore/:_id",
+            "url": "/ms/_zremrangebyscore/:_id",
+            "verb": "DELETE"
+          }
+        ]
+      },
+      "zrevrangebylex": {
+        "action": "zrevrangebylex",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrevrangebylex/:_id",
+            "url": "/ms/_zrevrangebylex/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrevrangebyscore": {
+        "action": "zrevrangebyscore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrevrangebyscore/:_id",
+            "url": "/ms/_zrevrangebyscore/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrevrank": {
+        "action": "zrevrank",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrevrank/:_id/:member",
+            "url": "/ms/_zrevrank/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zunionstore": {
+        "action": "zunionstore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zunionstore/:_id",
+            "url": "/ms/_zunionstore/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zcard": {
+        "action": "zcard",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zcard/:_id",
+            "url": "/ms/_zcard/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "type": {
+        "action": "type",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_type/:_id",
+            "url": "/ms/_type/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "ttl": {
+        "action": "ttl",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_ttl/:_id",
+            "url": "/ms/_ttl/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "strlen": {
+        "action": "strlen",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_strlen/:_id",
+            "url": "/ms/_strlen/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "smembers": {
+        "action": "smembers",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_smembers/:_id",
+            "url": "/ms/_smembers/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "scard": {
+        "action": "scard",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_scard/:_id",
+            "url": "/ms/_scard/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "rpop": {
+        "action": "rpop",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_rpop/:_id",
+            "url": "/ms/_rpop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "pttl": {
+        "action": "pttl",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_pttl/:_id",
+            "url": "/ms/_pttl/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "persist": {
+        "action": "persist",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_persist/:_id",
+            "url": "/ms/_persist/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lpop": {
+        "action": "lpop",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lpop/:_id",
+            "url": "/ms/_lpop/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "llen": {
+        "action": "llen",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_llen/:_id",
+            "url": "/ms/_llen/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "incr": {
+        "action": "incr",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_incr/:_id",
+            "url": "/ms/_incr/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hvals": {
+        "action": "hvals",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hvals/:_id",
+            "url": "/ms/_hvals/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hlen": {
+        "action": "hlen",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hlen/:_id",
+            "url": "/ms/_hlen/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hkeys": {
+        "action": "hkeys",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hkeys/:_id",
+            "url": "/ms/_hkeys/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hgetall": {
+        "action": "hgetall",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hgetall/:_id",
+            "url": "/ms/_hgetall/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "get": {
+        "action": "get",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/:_id",
+            "url": "/ms/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "decr": {
+        "action": "decr",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_decr/:_id",
+            "url": "/ms/_decr/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "rpushx": {
+        "action": "rpushx",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_rpushx/:_id",
+            "url": "/ms/_rpushx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "lpushx": {
+        "action": "lpushx",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_lpushx/:_id",
+            "url": "/ms/_lpushx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "getset": {
+        "action": "getset",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_getset/:_id",
+            "url": "/ms/_getset/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "sinter": {
+        "action": "sinter",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_sinter",
+            "url": "/ms/_sinter",
+            "verb": "GET"
+          }
+        ]
+      },
+      "pfcount": {
+        "action": "pfcount",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_pfcount",
+            "url": "/ms/_pfcount",
+            "verb": "GET"
+          }
+        ]
+      },
+      "incrbyfloat": {
+        "action": "incrbyfloat",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_incrbyfloat/:_id",
+            "url": "/ms/_incrbyfloat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "incrby": {
+        "action": "incrby",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_incrby/:_id",
+            "url": "/ms/_incrby/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "geopos": {
+        "action": "geopos",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_geopos/:_id",
+            "url": "/ms/_geopos/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hget": {
+        "action": "hget",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hget/:_id/:field",
+            "url": "/ms/_hget/:_id/:field",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hsetnx": {
+        "action": "hsetnx",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hsetnx/:_id",
+            "url": "/ms/_hsetnx/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "msetnx": {
+        "action": "msetnx",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_msetnx",
+            "url": "/ms/_msetnx",
+            "verb": "POST"
+          }
+        ]
+      },
+      "rpush": {
+        "action": "rpush",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_rpush/:_id",
+            "url": "/ms/_rpush/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "hincrbyfloat": {
+        "action": "hincrbyfloat",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hincrbyfloat/:_id",
+            "url": "/ms/_hincrbyfloat/:_id",
+            "verb": "POST"
+          }
+        ]
+      },
+      "zrevrange": {
+        "action": "zrevrange",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrevrange/:_id",
+            "url": "/ms/_zrevrange/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zrank": {
+        "action": "zrank",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zrank/:_id/:member",
+            "url": "/ms/_zrank/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zscore": {
+        "action": "zscore",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zscore/:_id/:member",
+            "url": "/ms/_zscore/:_id/:member",
+            "verb": "GET"
+          }
+        ]
+      },
+      "zscan": {
+        "action": "zscan",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_zscan/:_id",
+            "url": "/ms/_zscan/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "hscan": {
+        "action": "hscan",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_hscan/:_id",
+            "url": "/ms/_hscan/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "exists": {
+        "action": "exists",
+        "controller": "ms",
+        "http": [
+          {
+            "path": "/ms/_exists",
+            "url": "/ms/_exists",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "prometheus": {
+      "metrics": {
+        "action": "metrics",
+        "controller": "prometheus",
+        "http": [
+          {
+            "path": "/_/metrics",
+            "url": "/_/metrics",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "authentication": {
+      "sign_up": {
+        "action": "sign_up",
+        "controller": "authentication",
+        "http": [
+          {
+            "path": "/_/authentication/sign_up",
+            "url": "/_/authentication/sign_up",
+            "verb": "POST"
+          }
+        ]
+      },
+      "reinit_pwd": {
+        "action": "reinit_pwd",
+        "controller": "authentication",
+        "http": [
+          {
+            "path": "/_/authentication/reinit_pwd",
+            "url": "/_/authentication/reinit_pwd",
+            "verb": "POST"
+          }
+        ]
+      },
+      "check_code": {
+        "action": "check_code",
+        "controller": "authentication",
+        "http": [
+          {
+            "path": "/_/authentication/check_code",
+            "url": "/_/authentication/check_code",
+            "verb": "GET"
+          }
+        ]
+      },
+      "email_used": {
+        "action": "email_used",
+        "controller": "authentication",
+        "http": [
+          {
+            "path": "/_/authentication/email_used",
+            "url": "/_/authentication/email_used",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "moodsgroup": {
+      "updateMoodsGroup": {
+        "action": "updateMoodsGroup",
+        "controller": "moodsgroup",
+        "http": [
+          {
+            "path": "/_/moodsgroup/update",
+            "url": "/_/moodsgroup/update",
+            "verb": "POST"
+          }
+        ]
+      },
+      "updateDailyMoodsGroup": {
+        "action": "updateDailyMoodsGroup",
+        "controller": "moodsgroup",
+        "http": [
+          {
+            "path": "/_/moodsgroup/update_daily",
+            "url": "/_/moodsgroup/update_daily",
+            "verb": "POST"
+          }
+        ]
+      },
+      "getDailyMoodsGroup": {
+        "action": "getDailyMoodsGroup",
+        "controller": "moodsgroup",
+        "http": [
+          {
+            "path": "/_/moodsgroup/daily_moods",
+            "url": "/_/moodsgroup/daily_moods",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "user": {
+      "delete_user": {
+        "action": "delete_user",
+        "controller": "user",
+        "http": [
+          {
+            "path": "/_/user/delete",
+            "url": "/_/user/delete",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "invitationcode": {
+      "generate_code": {
+        "action": "generate_code",
+        "controller": "invitationcode",
+        "http": [
+          {
+            "path": "/_/invtiationcode/generate",
+            "url": "/_/invtiationcode/generate",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "purge": {
+      "all": {
+        "action": "all",
+        "controller": "purge",
+        "http": [
+          {
+            "path": "/_/purge/all",
+            "url": "/_/purge/all",
+            "verb": "POST"
+          }
+        ]
+      },
+      "moods": {
+        "action": "moods",
+        "controller": "purge",
+        "http": [
+          {
+            "path": "/_/purge/moods",
+            "url": "/_/purge/moods",
+            "verb": "POST"
+          }
+        ]
+      },
+      "groups": {
+        "action": "groups",
+        "controller": "purge",
+        "http": [
+          {
+            "path": "/_/purge/groups",
+            "url": "/_/purge/groups",
+            "verb": "POST"
+          }
+        ]
+      },
+      "users": {
+        "action": "users",
+        "controller": "purge",
+        "http": [
+          {
+            "path": "/_/purge/users",
+            "url": "/_/purge/users",
+            "verb": "POST"
+          }
+        ]
+      },
+      "invitationCodes": {
+        "action": "invitationCodes",
+        "controller": "purge",
+        "http": [
+          {
+            "path": "/_/purge/invitation-codes",
+            "url": "/_/purge/invitation-codes",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "app": {
+      "get_version": {
+        "action": "get_version",
+        "controller": "app",
+        "http": [
+          {
+            "path": "/_/app/version",
+            "url": "/_/app/version",
+            "verb": "GET"
+          }
+        ]
+      }
+    },
+    "group": {
+      "members": {
+        "action": "members",
+        "controller": "group",
+        "http": [
+          {
+            "path": "/_/group/members",
+            "url": "/_/group/members",
+            "verb": "GET"
+          }
+        ]
+      },
+      "delete": {
+        "action": "delete",
+        "controller": "group",
+        "http": [
+          {
+            "path": "/_/group/delete",
+            "url": "/_/group/delete",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "notification": {
+      "send_mood_reminder": {
+        "action": "send_mood_reminder",
+        "controller": "notification",
+        "http": [
+          {
+            "path": "/_/notification/mood-reminder",
+            "url": "/_/notification/mood-reminder",
+            "verb": "POST"
+          }
+        ]
+      },
+      "send_notification": {
+        "action": "send_notification",
+        "controller": "notification",
+        "http": [
+          {
+            "path": "/_/notification/send-notification",
+            "url": "/_/notification/send-notification",
+            "verb": "POST"
+          }
+        ]
+      }
+    },
+    "kuzzle-plugin-auth-passport-local/password": {
+      "getResetPasswordToken": {
+        "action": "getResetPasswordToken",
+        "controller": "kuzzle-plugin-auth-passport-local/password",
+        "http": [
+          {
+            "path": "/_plugin/kuzzle-plugin-auth-passport-local/password/resetToken/:_id",
+            "url": "/_plugin/kuzzle-plugin-auth-passport-local/password/resetToken/:_id",
+            "verb": "GET"
+          },
+          {
+            "path": "/_/password/resetToken/:_id",
+            "url": "/_/password/resetToken/:_id",
+            "verb": "GET"
+          }
+        ]
+      },
+      "reset": {
+        "action": "reset",
+        "controller": "kuzzle-plugin-auth-passport-local/password",
+        "http": [
+          {
+            "path": "/_plugin/kuzzle-plugin-auth-passport-local/password/reset",
+            "url": "/_plugin/kuzzle-plugin-auth-passport-local/password/reset",
+            "verb": "POST"
+          },
+          {
+            "path": "/_/password/reset",
+            "url": "/_/password/reset",
+            "verb": "POST"
+          }
+        ]
+      }
+    }
+  },
+  "status": 200,
+  "volatile": null
+}
