@@ -57,6 +57,7 @@ function bobRequette({ action = "get", collection = undefined, body = undefined,
 function login(username, password, callback = () => { }) {
     bobRequette({
         action: "login", body: { username, password }, controller: "auth", callback: (data) => {
+            console.log(data)
             token = data.result.jwt;
             setTimeout(() => {
                 login(username, password)
@@ -74,7 +75,10 @@ function getMoods(callback) {
     })
 }
 function sendMessage(client, channel, message) {
-    client.channels.cache.get(channel).send(message);
+    client.channels.cache.get(channel).send({
+            content: message,
+            flags: [ 4096 ]
+    })
 }
 
 function displayMood(client, mood, moodId) {
@@ -96,6 +100,7 @@ function displayMood(client, mood, moodId) {
         if (i < newHumeurs.length) {
             //si newHumeurs[i] contient un mot de la liste des mots interdits, on le remplace par "·"*longueur du mot
             let badWords = config.badWords;
+            let prevnewHumeurs = newHumeurs[i]
             for (let word of badWords) {
                 newHumeurs[i] = newHumeurs[i].replace(new RegExp(word, "gi"), "·".repeat(word.length));
             }
@@ -107,7 +112,7 @@ function displayMood(client, mood, moodId) {
             let text = config.emoji[moodId] + " " + newHumeurs[i];
             sendMessage(client, categories.general, text);
             sendMessage(client, categories[moodId], text);
-            newHumeursList.push(newHumeurs[i]);
+            newHumeursList.push(prevnewHumeurs);
             i+=1;
         }else{
             //arette la boucle
@@ -117,7 +122,6 @@ function displayMood(client, mood, moodId) {
             lastHumeurs.lastDate = actualDate;
             let saveHumeurs = require('./lastHumeurs.json');
             saveHumeurs[moodId] = lastHumeurs;
-
             fs.writeFileSync('./lastHumeurs.json', JSON.stringify(saveHumeurs));
         }
     }, 100);//100ms pour éviter le spam de l'api de discord
@@ -133,7 +137,7 @@ function displayMood(client, mood, moodId) {
 }
 function displayPubMessage() {
     bobRequette({
-        action: "update",
+        action: "create",
         body: {
             userId: "",
             state: "happy",
@@ -146,10 +150,10 @@ function displayPubMessage() {
         collection: "moods",
         controller: "document",
         index: "bob",
-        id: "mNRT_I0B4SaVy7Ibzp-a",
+        //id: "rdptAY4BqvXOFMWwK9uG",
         token,
         callback: (data) => {
-            console.log(data);
+            console.log('message de pub envoyer')
         }
     });
 }
@@ -181,7 +185,11 @@ client.once(Events.ClientReady, readyClient => {
     updateChannel();
     function updateChannel() {
         getMoods((moods) => {
-            moods = moods[moods.length - 1];
+            moods.sort((a, b) => new Date(b.day) - new Date(a.day));
+
+            // Récupérer la première date après le tri
+            moods = moods[0];            
+            console.log(moods)
             displayMood(client, moods.moods.happy, "happy");
             displayMood(client, moods.moods.neutral, "neutral");
             displayMood(client, moods.moods.sad, "sad");
